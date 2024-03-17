@@ -1,0 +1,7 @@
+﻿@*'Adding a quote confirmation page'*@
+@model CarInsurance.Models.QuoteConfirm
+
+<h2>Thank you!</h2>
+<p>Your quote is: @Model.QuoteAmount.ToString("C")</p>
+
+@Html.ActionLink("Go to Admin View", "Admin", "Insuree", null, new { @class = "btn btn-primary" })
